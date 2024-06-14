@@ -123,6 +123,7 @@ const logoutUser = asyncHandler(async (req,res,next) => {
     return res.status(200)
               .json(new ApiResponse(200,{},"logout user"))
 })
+
 export {
     registerUser,
     loginUser,

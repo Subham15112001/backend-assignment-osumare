@@ -12,7 +12,7 @@ const taskSchema = new Schema({
     },
     taskStatus : {
         type : Boolean,
-        default : fasle
+        default : false
     },
     taskUser : {
         type : Schema.Types.ObjectId,
@@ -20,4 +20,4 @@ const taskSchema = new Schema({
     }
 },{timestamps : true})
 
-export default Task = mongoose.model("Task",taskSchema)
+export const  Task = mongoose.model("Task",taskSchema)
